@@ -21,3 +21,4 @@ Pods/
 build/
 *.lock
 *.db
+.DS_Store
