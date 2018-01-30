@@ -43,7 +43,7 @@ class CustomProgressView: UIView {
     
     var progress = 0 {
         willSet{
-            let count = newValue == 6 ? 7 : newValue
+            let count = newValue > 6 ? 7 : newValue
             progressView.progress = Float(count) / 7.0
             for (i, label) in labels.enumerated() {
                 label.textColor = i < count ? UIColor.blue : i == count ? UIColor.red : UIColor.gray
